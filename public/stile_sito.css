@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, Helvetica;
+	font-size: 18px;
+	background-color: #f2cc0f
+}
+
+#container {
+	width:1600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f2cc0f;
+}
+
+#header img {
+	width: 100%;
+	height: 500px;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+#sinistra_pc {
+	width:200px;
+	float:left;
+	text-align:center;
+	padding: 20px 25px;
+	background-color: #f2cc0f;
+	height: 1300px;
+	font-size: 16px;
+}
+#sinistra_cel {
+	visibility: hidden;
+	display: none;
+}
+
+#sinistra_pc ul, #destra ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#centrale {
+	width:1000px;
+	padding: 0 50px;
+	text-align: justify;
+	float:left;
+	background-color: #fff9b3;
+}
+
+#centrale img {
+	max-width: 600px;
+	height:auto;
+	padding: 0 200px;
+}
+
+#destra {
+	width:200px;
+	float:left;
+	text-align:center;
+	padding: 20px 25px;
+	height:auto;
+	font-size: 16px;
+}
+
+#sinistra_pc li {
+	margin-bottom: 15px;
+	padding-top: 20px;
+}
+
+#destra li {
+	margin-bottom: 15px;
+	text-align: left;
+	font-size: 14px;
+}
+
+#footer {
+	width: 100%;
+	height: 100px;
+	clear: both; /* spezo i float precedenti, forzo l'interruzione degli affiancamenti */
+	background-color: #f4c430;
+	color: #ffffff;
+	}
+	
+#primo {
+	padding: 30px 300px;
+	float:left;
+	font-size: 18px;
+}
+
+#secondo {
+	padding: 20px 200px;
+	float:left;
+}
+
+table {
+	border: 3px solid red;
+	width: 200px;
+	height: 60px;
+}
+
+td {
+	text-align: center;
+	font-size: 18px;
+	color: red;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+	#container{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#header img {
+		display: block;
+		width: 80%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+}
+	#sinistra_pc {
+		text-align:center;
+		height: 30px;
+		width: 95%;
+		/*margin-left: 5px;
+		margin-right: 5px;*/
+		padding: 10px 2.5%;
+	}
+	
+	#sinistra_pc ul, #sinistra_pc li {
+		display: inline; 
+		padding-left: 32px;
+		padding-right: 32px;
+		font-size: 24px;
+		color: white;
+	}
+	
+	a {
+	color:white;
+	}
+	
+	#centrale {
+		width: 60%;
+		padding: 0 2.5%;
+	}
+	
+	#centrale img {
+	max-width:90%;
+	height:auto;
+	padding: 0 2.5%;
+}
+
+#destra {
+	width:30%;
+	padding: 0 2.5%;
+}
+#primo {
+	padding: 30px 5%;
+	float:left;
+	font-size: 18px;
+}
+
+#secondo {
+	float:left;
+	padding: 20px 10%;
+}
+}
+@media only screen and (max-width: 770px) {
+	#container{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#header img {
+		display: block;
+		width: 80%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+}
+	#sinistra_pc {
+		display: none;
+		visibility: hidden;
+	}
+	#sinistra_cel {
+		display: block;
+		visibility: visible;
+		background-color: #f4c430;
+		width: 100%;
+		height: 40px;
+	}
+	
+	.genere{
+		background-color: #f4c430;
+		width: 100%;
+		height: 40px;
+		font-size: 24px;
+		font-weight: bold;
+		color: white;
+	}
+	a {
+	color:white;
+	}
+	#centrale {
+		width: 95%;
+		padding: 10px 2.5%;
+	}
+	
+	#centrale img {
+		max-width:90%;
+		height:auto;
+		padding: 0 5%;
+}
+	#destra {
+		width: 95%;
+		padding: 10px 2.5%;
+		display: inline;
+		height: auto;
+	}
+	#primo {
+	padding: 30px 33.3%;
+	font-size: 18px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	#secondo {
+	padding: 20px 33.3%;
+	margin-bottom: 10px;
+}
+}
